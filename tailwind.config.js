@@ -1,10 +1,14 @@
 module.exports = {
-  purge: [],
+   purge: {
+    enabled: true,
+    content: [
+      './public/**/*.html',
+    ]},
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
-      screen: {
-        xs: '420',
+      screens: {
+        'xs': '420px',
       },
       fontFamily: {
         primary: ['Lexend Deca', 'sans-serif'],
@@ -17,9 +21,9 @@ module.exports = {
         overlay: '#1c1938',
       },
       backgroundImage: theme => ({
-        'mobile': "url('/images/image-header-mobile.jpg')",
-        'desktop': "url('/images/image-header-desktop.jpg')",
-       }),
+        mobile: "url('/images/image-header-mobile.jpg')",
+        desktop: "url('/images/image-header-desktop.jpg')",
+      }),
       zIndex: {
         '-50': '-50',
       },
