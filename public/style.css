@@ -576,19 +576,9 @@ video {
   margin-top: 3rem;
 }
 
-.px-2{
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-}
-
 .px-3{
   padding-left: 0.75rem;
   padding-right: 0.75rem;
-}
-
-.px-5{
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
 }
 
 .pb-4{
@@ -648,10 +638,6 @@ video {
 
 .uppercase{
   text-transform: uppercase;
-}
-
-.w-11\/12{
-  width: 91.666667%;
 }
 
 @-webkit-keyframes spin{
@@ -769,6 +755,10 @@ video {
 }
 
 @media (min-width: 768px){
+  .md\:justify-evenly{
+    justify-content: space-evenly;
+  }
+
   .md\:m-32{
     margin: 8rem;
   }
@@ -801,9 +791,14 @@ video {
     line-height: 1.5rem;
   }
 
-  .lg\:mx-56{
-    margin-left: 14rem;
-    margin-right: 14rem;
+  .lg\:mx-16{
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+
+  .lg\:px-0{
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
   .lg\:px-12{
@@ -813,6 +808,10 @@ video {
 
   .lg\:pt-0{
     padding-top: 0px;
+  }
+
+  .lg\:pt-4{
+    padding-top: 1rem;
   }
 
   .lg\:pb-4{
@@ -830,17 +829,22 @@ video {
   .lg\:text-left{
     text-align: left;
   }
-
-  .lg\:w-10\/12{
-    width: 83.333333%;
-  }
-
-  .lg\:w-11\/12{
-    width: 91.666667%;
-  }
 }
 
 @media (min-width: 1280px){
+  .xl\:mx-56{
+    margin-left: 14rem;
+    margin-right: 14rem;
+  }
+
+  .xl\:px-2{
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .xl\:pt-0{
+    padding-top: 0px;
+  }
 }
 
 @media (min-width: 1536px){
@@ -855,7 +859,7 @@ video {
     display: flex;
   }
 
-  .xs\:justify-between{
-    justify-content: space-between;
+  .xs\:justify-around{
+    justify-content: space-around;
   }
 }
